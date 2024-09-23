@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="Stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>E-Commerce</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header-content">
+        <h1>Products</h1>
+      </div>
+    </header>
+    <section class="filters">
+      <div class="filters-content">
+        <button class="all" onclick="filterByCategory('all')">All</button>
+        <button class="clothing" onclick="filterByCategory('clothing')">
+          Clothing
+        </button>
+        <button class="electronics" onclick="filterByCategory('electronics')">
+          Electronics
+        </button>
+        <button
+          class="healthy"
+          onclick="filterByCategory('healthy and beauty')"
+        >
+          Healthy and Beauty
+        </button>
+        <button class="foods" onclick="filterByCategory('foods')">Foods</button>
+        <button class="furniture" onclick="filterByCategory('furniture')">
+          Furniture
+        </button>
+        <button class="travel" onclick="filterByCategory('travel')">
+          Travel
+        </button>
+        <button class="dining" onclick="filterByCategory('dining')">
+          Dining
+        </button>
+        <button class="fit" onclick="filterByCategory('body fit cushion')">
+          Body Fit Cushion
+        </button>
+        <button class="bathroom" onclick="filterByCategory('bathroom')">
+          Bathroom
+        </button>
+        <button class="bedding" onclick="filterByCategory('bedding')">
+          Bedding
+        </button>
+        <button class="housekeeping" onclick="filterByCategory('housekeeping')">
+          Housekeeping
+        </button>
+      </div>
+    </section>
+    <section class="products" id="products">
+      <h2>Results</h2>
+      <div class="products-content" id="products-content"></div>
+    </section>
+    <script id="products-template" type="text/x-handlebars-template">
+      {{#each products}}
+        <div class="item">
+          <img alt="" src="./img/photo-1522724514897-24b0eb7ba3ea.avif" />
+          <div class="details">
+            <div class="header">
+              <h3>{{this.name}}</h3>
+              <h4 class={{this.class}}>{{this.category}}</h4>
+            </div>
+            <span class="divider"> </span>
+            <p>Price: ${{this.price}}</p>
+            <div class="actions">
+              <button class="cart">add to cart</button>
+              <button class="wishlist">add to wishlist</button>
+            </div>
+          </div>
+        </div>
+      {{/each}}
+    </script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/handlebars.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

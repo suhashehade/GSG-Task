@@ -1,0 +1,225 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header-content {
+  position: relative;
+  background-image: linear-gradient(rgb(252, 184, 57), rgb(94, 69, 37));
+  height: 40vh;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.header-content h1 {
+  color: rgb(23, 23, 46);
+}
+
+.filters-content {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+  padding: 15px;
+}
+
+.filters-content button {
+  width: 15%;
+  font-size: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+}
+
+.all {
+  background-color: rgb(249, 212, 190);
+}
+.filters-content .all:hover {
+  background-color: rgba(253, 209, 186, 0.6);
+}
+.clothing {
+  background-color: rgb(244, 245, 170);
+}
+
+.filters-content .clothing:hover {
+  background-color: rgba(244, 245, 170, 0.6);
+}
+.electronics {
+  background-color: rgb(250, 207, 244);
+}
+.filters-content .electronics:hover {
+  background-color: rgba(250, 207, 244, 0.6);
+}
+.healthy {
+  background-color: rgb(211, 249, 204);
+}
+.filters-content .healthy:hover {
+  background-color: rgba(211, 249, 204, 0.6);
+}
+.foods {
+  background-color: rgb(215, 206, 247);
+}
+.filters-content .foods:hover {
+  background-color: rgba(215, 206, 247, 0.6);
+}
+.furniture {
+  background-color: rgb(177, 234, 248);
+}
+.filters-content .furniture:hover {
+  background-color: rgba(177, 234, 248, 0.6);
+}
+.travel {
+  background-color: rgb(253, 201, 207);
+}
+.filters-content .travel:hover {
+  background-color: rgba(253, 201, 207, 0.6);
+}
+.dining {
+  background-color: rgb(203, 252, 228);
+}
+.filters-content .dining:hover {
+  background-color: rgba(203, 252, 228, 0.6);
+}
+.fit {
+  background-color: rgb(248, 221, 192);
+}
+.filters-content .fit:hover {
+  background-color: rgba(248, 221, 192, 0.6);
+}
+.bathroom {
+  background-color: rgb(198, 235, 250);
+}
+.filters-content .bathroom:hover {
+  background-color: rgba(198, 235, 250, 0.6);
+}
+.bedding {
+  background-color: rgb(229, 229, 229);
+}
+.filters-content .bedding:hover {
+  background-color: rgba(229, 229, 229, 0.6);
+}
+.housekeeping {
+  background-color: rgb(242, 247, 200);
+}
+.filters-content .housekeeping:hover {
+  background-color: rgba(242, 247, 200, 0.6);
+}
+
+.products h2 {
+  text-align: center;
+}
+
+.products-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+  padding: 15px;
+}
+
+.products-content .item {
+  object-fit: fill;
+  width: 25%;
+  border: 1px solid rgb(252, 184, 57);
+  border-radius: 5px;
+}
+
+.products-content .item img {
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.products-content .item .details {
+  padding: 20px 15px;
+}
+
+.products-content .item .header {
+  display: flex;
+  justify-content: space-between;
+  text-transform: capitalize;
+}
+
+.products-content .item .header h3 {
+  font-size: 20px;
+}
+.products-content .item .header h4 {
+  font-size: 15px;
+  font-weight: 400;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.products-content .item .details .divider {
+  display: inline-block;
+  height: 0.5px;
+  width: 100%;
+  background-color: rgb(252, 184, 57);
+}
+
+.products-content .item .details .actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.products-content .item .details .actions button {
+  border-radius: 3px;
+  width: 45%;
+  border: 1px solid rgb(252, 184, 57);
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.products-content .item .details .actions .cart {
+  background-color: black;
+  color: white;
+}
+
+.products-content .item .details .actions .wishlist {
+  background-color: white;
+  color: black;
+}
+
+.products-content .item .details .actions .cart:hover {
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+@media screen and (max-width: 1024px) and (min-width: 780px) {
+  .header-content {
+    height: 30vh;
+  }
+
+  .filters-content button {
+    width: 20%;
+  }
+  .products-content .item {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 780px) and (min-width: 460px) {
+  .header-content {
+    height: 20vh;
+  }
+  .filters-content button {
+    width: 30%;
+  }
+  .products-content .item {
+    width: 100%;
+  }
+}
