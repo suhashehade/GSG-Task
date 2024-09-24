@@ -1,0 +1,105 @@
+.filters-content {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+  padding: 15px;
+}
+
+.filters-content button {
+  width: 15%;
+  font-size: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+}
+
+.all {
+  background-color: rgb(249, 212, 190);
+}
+.filters-content .all:hover {
+  background-color: rgba(253, 209, 186, 0.6);
+}
+.clothing {
+  background-color: rgb(244, 245, 170);
+}
+
+.filters-content .clothing:hover {
+  background-color: rgba(244, 245, 170, 0.6);
+}
+.electronics {
+  background-color: rgb(250, 207, 244);
+}
+.filters-content .electronics:hover {
+  background-color: rgba(250, 207, 244, 0.6);
+}
+.healthy {
+  background-color: rgb(211, 249, 204);
+}
+.filters-content .healthy:hover {
+  background-color: rgba(211, 249, 204, 0.6);
+}
+.foods {
+  background-color: rgb(215, 206, 247);
+}
+.filters-content .foods:hover {
+  background-color: rgba(215, 206, 247, 0.6);
+}
+.furniture {
+  background-color: rgb(177, 234, 248);
+}
+.filters-content .furniture:hover {
+  background-color: rgba(177, 234, 248, 0.6);
+}
+.travel {
+  background-color: rgb(253, 201, 207);
+}
+.filters-content .travel:hover {
+  background-color: rgba(253, 201, 207, 0.6);
+}
+.dining {
+  background-color: rgb(203, 252, 228);
+}
+.filters-content .dining:hover {
+  background-color: rgba(203, 252, 228, 0.6);
+}
+.fit {
+  background-color: rgb(248, 221, 192);
+}
+.filters-content .fit:hover {
+  background-color: rgba(248, 221, 192, 0.6);
+}
+.bathroom {
+  background-color: rgb(198, 235, 250);
+}
+.filters-content .bathroom:hover {
+  background-color: rgba(198, 235, 250, 0.6);
+}
+.bedding {
+  background-color: rgb(229, 229, 229);
+}
+.filters-content .bedding:hover {
+  background-color: rgba(229, 229, 229, 0.6);
+}
+.housekeeping {
+  background-color: rgb(242, 247, 200);
+}
+.filters-content .housekeeping:hover {
+  background-color: rgba(242, 247, 200, 0.6);
+}
+
+@media screen and (max-width: 1024px) and (min-width: 780px) {
+  .filters-content button {
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 780px) and (min-width: 460px) {
+  .filters-content button {
+    width: 30%;
+  }
+}

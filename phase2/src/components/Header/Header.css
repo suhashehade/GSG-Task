@@ -1,0 +1,31 @@
+.header {
+  width: 100%;
+}
+.header-content {
+  width: 100%;
+  position: relative;
+  background-image: linear-gradient(rgb(252, 184, 57), rgb(94, 69, 37));
+  height: 40vh;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.header-content h1 {
+  color: rgb(23, 23, 46);
+}
+
+@media screen and (max-width: 1024px) and (min-width: 780px) {
+  .header-content {
+    height: 30vh;
+  }
+}
+
+@media screen and (max-width: 780px) and (min-width: 460px) {
+  .header-content {
+    height: 20vh;
+  }
+}
